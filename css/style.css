@@ -931,6 +931,28 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+
+  .Home__Hero {
+    height: auto;
+  }
+  
+  .Home__HeroTexto {
+    padding: 30px;
+    margin-top: 60px;
+    height: auto;
+  }
+
+  .Home__HeroImagen {
+    margin-top: 10px;
+    align-items: flex-start;
+  }
+
+  .Home__Seccion,
+  .SobreMi__Seccion,
+  .Servicios_Seccion {
+    padding: 20px;
+  }
+
   .Header__Menu {
     display: none;
   }
@@ -943,6 +965,16 @@ body {
   .grid {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .Contacto__Contenedor {
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .Contato_Formulario {
+    width: 100%;
+    padding: 20px;
   }
 
   .Contacto__Item {
