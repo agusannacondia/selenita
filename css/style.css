@@ -158,6 +158,24 @@ body {
   cursor: pointer;
 }
 
+.Footer__Seccion .fb-logo,
+.Footer__Seccion .ig-logo,
+.Footer__Seccion .tw-logo {
+  transition: all 0.3s ease-out;
+}
+
+.Footer__Seccion .fb-logo:hover {
+  color: #1773ea;
+}
+
+.Footer__Seccion .ig-logo:hover {
+  color: #ee9751;
+}
+
+.Footer__Seccion .tw-logo:hover {
+  color: #00a6e8;
+}
+
 /*  Home    */
 
 .Home__Hero {
@@ -866,10 +884,6 @@ body {
     height: auto;
   }
 
-  .SobreMi__Seccion {
-    padding: 50px;
-  }
-
   .SobreMi__Articulo {
     display: flex;
     flex-wrap: wrap;
@@ -888,6 +902,12 @@ body {
 
   .Servicios_Articulo:nth-child(even) {
     flex-direction: column-reverse;
+  }
+
+  .Home__Seccion,
+  .SobreMi__Seccion,
+  .Servicios_Seccion {
+    padding: 20px;
   }
 
   .Servicios_Descripcion {
@@ -950,10 +970,13 @@ body {
 
   .Home__Seccion,
   .SobreMi__Seccion,
+  .Galeria__Wrapper,
   .Servicios_Seccion {
     padding: 20px;
   }
 
+  .Servicios_Seccion,
+  .Galeria__Wrapper,
   .SobreMi__Seccion {
     margin-top: 50px;
   }
