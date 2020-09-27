@@ -76,6 +76,8 @@
   </head>
   <body>
     <!-- Header -->
+
+    <!--
     <header class="HeaderHome">
       <div class="Header__Titulo">
         <h1><a href="./index.html">Selenita</a></h1>
@@ -92,6 +94,22 @@
         </ul>
       </nav>
     </header>
+    -->
+    <div class="icon">
+      <button onclick="openNav(estado)" class="menu-btn" id="menuButton">
+        <span class="burger-icon"></span>
+      </button>
+    </div>
+    <div id="menu" class="menu">
+      <div class="menu__content">
+        <a class="menu__item menu__item--logo" href="./index.html"><h1>Selenita</h1></a>
+        <a class="menu__item menu__item--link" href="./sobremi.html">SOBRE MI</a>
+        <a class="menu__item menu__item--link" href="./servicios.html">SERVICIOS</a>
+        <a class="menu__item menu__item--link" href="./galeria.html">GALERÍA</a>
+        <a class="menu__item menu__item--link" href="./contacto.html">CONTACTO</a>
+      </div>
+    </div>
+
     <!-- Hero -->
     <div class="Home__Hero">
       <div class="Home__HeroTexto">
@@ -341,6 +359,8 @@
     ></script>
     <script>
       new WOW().init();
+    </script>
+    <script src="./js/scripts.js">
     </script>
   </body>
 </html>

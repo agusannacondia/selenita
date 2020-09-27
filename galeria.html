@@ -52,22 +52,20 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="Header">
-      <div class="Header__Titulo">
-        <h1><a href="./index.html">Selenita</a></h1>
+    <div class="icon">
+      <button onclick="openNav(estado)" class="menu-btn" id="menuButton">
+        <span class="burger-icon"></span>
+      </button>
+    </div>
+    <div id="menu" class="menu">
+      <div class="menu__content">
+        <a class="menu__item menu__item--logo" href="./index.html"><h1>Selenita</h1></a>
+        <a class="menu__item menu__item--link" href="./sobremi.html">SOBRE MI</a>
+        <a class="menu__item menu__item--link" href="./servicios.html">SERVICIOS</a>
+        <a class="menu__item menu__item--link" href="./galeria.html">GALERÍA</a>
+        <a class="menu__item menu__item--link" href="./contacto.html">CONTACTO</a>
       </div>
-      <a href="#nav" class="open"><img src="img/open.png" /></a>
-      <nav class="Header__Menu" id="nav">
-        <a href="#" class="close"><img src="img/close.png" /></a>
-        <ul>
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="./sobremi.html">SOBRE MI</a></li>
-          <li><a href="./servicios.html">SERVICIOS</a></li>
-          <li><a href="./galeria.html" class="actual-page">GALERÍA</a></li>
-          <li><a href="./contacto.html">CONTACTO</a></li>
-        </ul>
-      </nav>
-    </header>
+    </div>
     <!-- Content -->
     <div class="Galeria__Wrapper">
       <h2>Galería</h2>
@@ -386,6 +384,8 @@
     ></script>
     <script>
       new WOW().init();
+    </script>
+    <script src="./js/scripts.js">
     </script>
   </body>
 </html>
