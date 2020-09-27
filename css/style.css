@@ -293,7 +293,7 @@ body {
 
 .SobreMi__Seccion {
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -339,7 +339,7 @@ body {
 
 .Servicios_Seccion {
   padding: 50px;
-  margin-top: 20px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -369,7 +369,7 @@ body {
 
 .Servicios_Descripcion button {
   margin-left: 20px;
-  display: inline-block;
+  display: none;
   font-size: 1.5rem;
   margin-bottom: 10px;
   background-color: var(--green);
@@ -519,7 +519,8 @@ body {
 /*  Galeria    */
 
 .Galeria__Wrapper {
-  margin-top: 50px;
+  margin-top: 100px;
+  padding-top: 50px;
   margin-bottom: 100px;
 }
 
@@ -565,7 +566,8 @@ body {
 /*  Contacto    */
 
 .Contacto__Contenedor {
-  margin-top: 120px;
+  margin-top: 100px;
+  padding-top: 50px;
   margin-bottom: 100px;
   background: url("../img/contacto/fondo.jpg");
   display: flex;
@@ -970,6 +972,10 @@ body {
     flex-wrap: wrap;
   }
 
+  .grid__item {
+    margin-bottom: 10px;
+  }
+
   .Contacto__Contenedor {
     margin-top: 50px;
     padding: 20px;
@@ -1066,6 +1072,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .Footer__Seccion:nth-of-type(4) ul li {
+    margin-right: 0px;
   }
 
   .Footer__Seccion:nth-of-type(2),
