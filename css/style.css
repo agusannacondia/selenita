@@ -971,15 +971,33 @@ body {
 
   .Home__Seccion,
   .SobreMi__Seccion,
-  .Galeria__Wrapper,
   .Servicios_Seccion {
     padding: 20px;
+  }
+
+  .Galeria__Wrapper {
+    padding-top: 20px;
   }
 
   .Servicios_Seccion,
   .Galeria__Wrapper,
   .SobreMi__Seccion {
     margin-top: 50px;
+  }
+
+  .Galeria__Wrapper p {
+    padding: 0px 20px;
+  }
+
+  .Galeria__Imagen {
+    transition: none;
+  }
+  
+  .Galeria__Imagen:hover {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    transform: none;
   }
 
   .Header__Menu {
