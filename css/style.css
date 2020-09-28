@@ -133,7 +133,7 @@ body {
 .Footer__Seccion h2 {
   padding: 30px;
   font-size: 2rem;
-  font-family: "Kaushan Script", cursive;
+  font-family: 'Lobster', cursive;
 }
 
 .Footer__Firma {
@@ -818,6 +818,130 @@ body {
   grid-area: item17;
 }
 
+.menu-btn {
+  display: inline-block;
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
+.menu-btn:focus {
+  outline: none;
+}
+
+.burger-icon {
+  position: relative;
+}
+
+.burger-icon,
+.burger-icon:before,
+.burger-icon:after {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  -webkit-transition-property: background-color, -webkit-transform;
+  -moz-transition-property: background-color, -moz-transform;
+  -o-transition-property: background-color, -o-transform;
+  transition-property: background-color, transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.burger-icon:before,
+.burger-icon:after {
+  position: absolute;
+  content: "";
+}
+
+.burger-icon:before {
+  top: -8px;
+}
+
+.burger-icon:after {
+  top: 8px;
+}
+
+.menu-btn.is-active .burger-icon {
+  background-color: transparent;
+}
+
+.menu-btn.is-active .burger-icon:before {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -moz-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-btn.is-active .burger-icon:after {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -moz-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.icon {
+  height: 3em;
+  width: 3rem;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  visibility: visible;
+  z-index: 9999;
+  background-color: var(--lightpink);
+}
+.icon button {
+  padding: 1em 0.5em;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  background-color: var(--lightpink);
+  width: 250px;
+  height: 100vh;
+  transform: translateX(-250px);
+  z-index: 9899;
+}
+.menu__content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.menu__content h1 {
+  font-family: 'Lobster', cursive;
+}
+.menu__content .menu__item {
+  color: var(--white);
+  padding: 0.3em 0;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.menu__content .menu__item--link {
+  font-weight: 500;
+  padding-left: 1em;
+}
+.menu__content .menu__item--active {
+  color: var(--grey);
+  font-weight: bold;
+}
+.menu__content .menu__item--link:hover {
+  color: var(--grey);
+}
+.menu__content .menu__item--logo {
+  flex-grow: 0;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  padding-left: 1em;
+  font-family: "Kaushan Script", cursive;
+}
+
 @media screen and (min-width: 801px) and (max-width: 950px) {
   .Home__HeroTexto p {
     margin-bottom: 20px;
@@ -1125,133 +1249,6 @@ body {
   .Footer__Seccion:nth-of-type(4) {
     margin-bottom: 50px;
   }
-}
-
-
-
-/*////////////////////////////////////////////////////////////////////////*/
-.menu-btn {
-  display: inline-block;
-  cursor: pointer;
-  background: none;
-  border: 0;
-}
-.menu-btn:focus {
-  outline: none;
-}
-
-.burger-icon {
-  position: relative;
-}
-
-.burger-icon,
-.burger-icon:before,
-.burger-icon:after {
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-  -webkit-transition-property: background-color, -webkit-transform;
-  -moz-transition-property: background-color, -moz-transform;
-  -o-transition-property: background-color, -o-transform;
-  transition-property: background-color, transform;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-
-.burger-icon:before,
-.burger-icon:after {
-  position: absolute;
-  content: "";
-}
-
-.burger-icon:before {
-  top: -8px;
-}
-
-.burger-icon:after {
-  top: 8px;
-}
-
-.menu-btn.is-active .burger-icon {
-  background-color: transparent;
-}
-
-.menu-btn.is-active .burger-icon:before {
-  -webkit-transform: translateY(8px) rotate(45deg);
-  -moz-transform: translateY(8px) rotate(45deg);
-  -ms-transform: translateY(8px) rotate(45deg);
-  -o-transform: translateY(8px) rotate(45deg);
-  transform: translateY(8px) rotate(45deg);
-}
-
-.menu-btn.is-active .burger-icon:after {
-  -webkit-transform: translateY(-8px) rotate(-45deg);
-  -moz-transform: translateY(-8px) rotate(-45deg);
-  -ms-transform: translateY(-8px) rotate(-45deg);
-  -o-transform: translateY(-8px) rotate(-45deg);
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-.icon {
-  height: 3em;
-  width: 3rem;
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  display: flex;
-  justify-content: center;
-  visibility: visible;
-  z-index: 9999;
-  background-color: var(--lightpink);
-}
-.icon button {
-  padding: 1em 0.5em;
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  background-color: var(--lightpink);
-  width: 250px;
-  height: 100vh;
-  transform: translateX(-250px);
-  z-index: 9899;
-}
-.menu__content {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.menu__content h1 {
-  font-family: 'Lobster', cursive;
-}
-.menu__content .menu__item {
-  color: var(--white);
-  padding: 0.3em 0;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-.menu__content .menu__item--link {
-  font-weight: 500;
-  padding-left: 1em;
-}
-.menu__content .menu__item--active {
-  color: var(--grey);
-  font-weight: bold;
-}
-.menu__content .menu__item--link:hover {
-  color: var(--grey);
-}
-.menu__content .menu__item--logo {
-  flex-grow: 0;
-  padding-top: 2em;
-  padding-bottom: 3em;
-  padding-left: 1em;
-  font-family: "Kaushan Script", cursive;
 }
 
 @media (min-width: 801px) {
