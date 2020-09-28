@@ -197,6 +197,7 @@ body {
   color: white;
   font-size: 3.1rem;
   margin-bottom: 10px;
+  font-family: 'Lobster', cursive;
 }
 
 .Home__HeroTexto p {
@@ -1208,7 +1209,7 @@ body {
   justify-content: flex-start;
 }
 .menu__content h1 {
-  font-family: "Kaushan Script", cursive;
+  font-family: 'Lobster', cursive;
 }
 .menu__content .menu__item {
   color: var(--white);
@@ -1232,6 +1233,7 @@ body {
   padding-top: 2em;
   padding-bottom: 3em;
   padding-left: 1em;
+  font-family: "Kaushan Script", cursive;
 }
 
 @media (min-width: 801px) {
@@ -1263,5 +1265,6 @@ body {
     padding: 0;
     flex-grow: 1;
     margin-left: 1.5em;
+    font-family: "Kaushan Script", cursive;
   }
 }
