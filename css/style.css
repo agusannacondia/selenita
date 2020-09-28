@@ -683,7 +683,7 @@ body {
   margin-top: 20px;
 }
 
-.Contacto__Botones input {
+.Contacto__Botones button {
   display: inline-block;
   padding: 10px;
   border: 0px;
@@ -698,32 +698,32 @@ body {
   transition: background-color 0.3s;
 }
 
-.Contacto__Botones input:focus {
+.Contacto__Botones button:focus {
   outline: none;
 }
 
-.Contacto__Botones input[type="reset"] {
+.Contacto__Botones button:nth-of-type(1) {
   margin-right: 10px;
   font-size: 1.5rem;
 }
 
-.Contacto__Botones input[type="reset"]:hover {
+.Contacto__Botones button:nth-of-type(1):hover {
   background-color: var(--mediumgrey);
 }
 
-.Contacto__Botones input[type="reset"]:active {
+.Contacto__Botones button:nth-of-type(1):active {
   background-color: var(--lightgrey);
 }
 
-.Contacto__Botones input[type="submit"] {
+.Contacto__Botones button:nth-of-type(2) {
   background-color: var(--pink);
 }
 
-.Contacto__Botones input[type="submit"]:hover {
+.Contacto__Botones button:nth-of-type(2):hover {
   background-color: var(--strongpink);
 }
 
-.Contacto__Botones input[type="submit"]:active {
+.Contacto__Botones button:nth-of-type(2):active {
   background-color: var(--pink);
 }
 

@@ -73,6 +73,29 @@
       </div>
     </div>
     <!-- Content -->
+    <!--
+
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Your Role: <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    -->
     <div class="Contacto__Contenedor">
       <h2>Contacto</h2>
       <form name="contact" method="POST" data-netlify="true" class="Contato_Formulario" action="./index.html">
@@ -85,11 +108,10 @@
           <input type="email" id="email" name="email" />
         </div>
         <div class="Contacto__Item">
-          <label for="mensaje">Mensaje</label>
-          <textarea name="mensaje" id="mensaje"></textarea>
+          <label for="message">Mensaje</label>
+          <textarea name="message" id="message"></textarea>
         </div>
-        <div class="Contacto__Items">
-          <div class="Contacto__ItemsIndividual">
+        <div class="Contacto__Item">
             <label for="ciudad">Ciudad</label>
             <select name="ciudad" id="ciudad">
               <option value="montegrande">Monte Grande</option>
@@ -98,20 +120,10 @@
               <option value="guillon">Luis Guillon</option>
               <option value="otra">Otra</option>
             </select>
-          </div>
-          <div class="Contacto__ItemsIndividual">
-            <input
-              type="checkbox"
-              id="suscripcion"
-              name="suscripcion"
-              value="Suscripcion"
-            />
-            <label for="suscripcion">Suscribirte a novedades</label>
-          </div>
         </div>
         <div class="Contacto__Botones">
-          <input type="reset" value="🗑️" />
-          <input type="submit" value="✔" />
+          <button type="reset">🗑️</button>
+          <button type="submit">✔</button>
         </div>
       </form>
     </div>
